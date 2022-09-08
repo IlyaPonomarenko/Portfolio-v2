@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ilya Ponomarenko</title>
+  </head>
+  <body>
+    <div class="hero-banner">
+      <div class="hero-content-area">
+        <div class="hero-content">
+          <h1>Ilya Ponomarenko</h1>
+          <p>something something</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div>
+        <a href="#"><img class="logo" src="code-solid.svg" /></a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="https://github.com/IlyaPonomarenko" class="nav-link">
+            <span class="link-text">GitHub</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="https://www.linkedin.com/in/ilya-ponomarenko-53282624b/"
+            class="nav-link"
+          >
+            <span class="link-text">Linkedin</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="https://stackoverflow.com/users/19836133/ilya-ponomarenko"
+            class="nav-link"
+          >
+            <span class="link-text">Stackoverflow</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-menu">
+        <div class="nav-menu-line"></div>
+        <div class="nav-menu-line"></div>
+        <div class="nav-menu-line"></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
+          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
+          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
+          ipsa excepturi!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
+          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
+          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
+          ipsa excepturi!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
+          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
+          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
+          ipsa excepturi!
+        </p>
+      </div>
+    </div>
+  
+    <div class="contact">
+      <form>
+        <h2>Contact me</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="..." />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="..." />
+        </div>
+        <div class="form-group">
+          <label for="text">Your message:</label>
+
+          <textarea id="text"></textarea>
+        </div>
+        <input class="btn" type="submit"  />
+      </form>
+    </div>
+
+    <div style="margin-bottom: 100px"></div>
+    <footer class="footer">
+      <small>&copy; Copyright 2022, IlyaPonomarenko</small>
+    </footer>
+
+  </body>
+  <script>
+    const toggle = document.querySelector(".nav-menu")
+    const navItems = document.querySelector(".navbar-nav")
+
+    toggle.addEventListener("click", ()=>{
+      navItems.classList.toggle("active")
+    })
+  </script>
+</html>
