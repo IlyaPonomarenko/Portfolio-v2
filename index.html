@@ -52,65 +52,119 @@
         <div class="nav-menu-line"></div>
       </div>
     </nav>
-    <div class="container">
-      <div class="box">
+    <section class="aboutme">
+      <div class="aboutme-text">
+        <h2>Heading</h2>
+        <p class="head-p">Moist</p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
-          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
-          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
-          ipsa excepturi!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+          quisquam aut assumenda dicta non molestiae nesciunt commodi omnis
+          dolor, recusandae delectus, suscipit dolorum deserunt. Recusandae
+          impedit excepturi voluptatibus repellat temporibus!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id error
+          maxime ullam cum deleniti maiores. Tempora ipsa, eligendi libero
+          sapiente consequatur, quidem molestias, inventore eius ut labore
+          accusamus. Similique, dicta!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id error
+          maxime ullam cum deleniti maiores. Tempora ipsa, eligendi libero
+          sapiente consequatur, quidem molestias, inventore eius ut labore
+          accusamus. Similique, dicta!
         </p>
       </div>
-      <div class="box">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
-          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
-          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
-          ipsa excepturi!
-        </p>
+      <div class="picture-box">
+        <img src="myface.jpeg" alt="pic">
       </div>
-      <div class="box">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam
-          recusandae! Recusandae repellendus doloremque expedita nemo, a rerum
-          laborum tenetur, totam ad suscipit, quas illo ut saepe. Voluptatum,
-          ipsa excepturi!
-        </p>
-      </div>
-    </div>
-  
-    <div class="contact">
-      <form>
-        <h2>Contact me</h2>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="..." />
+    </section>
+    <section class="main-section">
+      <h2>Poopa</h2>
+      <div class="container">
+        <div class="box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
         </div>
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" placeholder="..." />
+        <div class="box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
         </div>
-        <div class="form-group">
-          <label for="text">Your message:</label>
+        <div class="box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <textarea id="text"></textarea>
+    <section class="skill-section">
+      <h2>My skills</h2>
+      <div class="skill-container">
+        <div class="skill-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
         </div>
-        <input class="btn" type="submit"  />
-      </form>
-    </div>
+        <div class="skill-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
+        </div>
+        <div class="skill-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
+            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
+            Voluptatum, ipsa excepturi!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <div class="contact">
+        <form>
+          <h2>Contact me</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="..." />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="..." />
+          </div>
+          <div class="form-group">
+            <label for="text">Your message:</label>
+
+            <textarea id="text"></textarea>
+          </div>
+          <input class="btn" type="submit" placeholder="submit" />
+        </form>
+      </div>
+    </section>
 
     <div style="margin-bottom: 100px"></div>
     <footer class="footer">
       <small>&copy; Copyright 2022, IlyaPonomarenko</small>
     </footer>
-
   </body>
-  <script>
-    const toggle = document.querySelector(".nav-menu")
-    const navItems = document.querySelector(".navbar-nav")
-
-    toggle.addEventListener("click", ()=>{
-      navItems.classList.toggle("active")
-    })
-  </script>
+  <script src="app.js"></script>
 </html>
