@@ -30,11 +30,12 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   position: sticky;
   top: 0;
-    background-color: #489975;
+    background-color: #454545;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(#00000080, rgba(0, 0, 0, 0.5))
+    border-bottom: #b6b6b6 1px solid;
+    
 }
 .navbar a{
   text-decoration: none;
@@ -66,7 +67,7 @@ body::-webkit-scrollbar-thumb {
 .nav-menu-line{
   width: 20px;
   height: 3px;
-  background-color: #fff;
+  background-color: #1e1e24;
   margin-bottom: 4px;
 }
 
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(pexels-hazel.jpg);
+    url(pics/pexels-hazel.jpg);
   background-size: cover;
 }
 .hero-content-area {
@@ -98,39 +99,81 @@ body::-webkit-scrollbar-thumb {
 .aboutme{
   display: flex;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.1);
-  margin: 1em;
   padding: 1em;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  min-height: 100vh;
+}
+.aboutme h2{
+  font-size: 2.4em;
+  padding-bottom: 0.4em;
+  width: auto;
+  border-bottom: #141418 2px solid;
 }
 .aboutme-text{
  display: flex;
  flex-direction: column;
- font-size: 1.15em;
+ font-size: 1em;
+ width: 50%;
+ margin-left: 3em;
+ margin-right: 3em;
+ justify-content: center;
 }
 .picture-box{
-  width: 60%;
+  width: 30%;
   height: 30%;
   padding: 1em;
+  margin: auto;
 }
 .picture-box img{
   width: 100%;
   height: 100%;
   border-radius: 10%;
 }
+
+.main-section{
+  display: flex;
+  background: #e8e8e8;
+  padding: 1em;
+  min-height: 100vh;
+}
+.main-text{
+display: flex;
+ flex-direction: column;
+ font-size: 1em;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: auto;
+ margin-left: auto;
+ justify-content: center;
+}
 .main-section h2{
-  text-align: center;
+  font-size: 2.4em;
+  padding-bottom: 0.4em;
+  width: auto;
+  border-bottom: #141418 2px solid;
 }
 
-
+.skill-section{
+  display: flex;
+  padding: 1em;
+  min-height: 100vh;
+  background: #444;
+}
 .skill-container{
   display: flex;
-  margin-top: 50px;
+  flex-direction: column;
+  font-size: 1em;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
 }
 .skill-section h2 {
-  text-align: center;
+  font-size: 2.4em;
+  padding-bottom: 0.4em;
+  width: auto;
+  border-bottom: #fff 2px solid;
+  color: #fff;
 }
 .skill-container .skill-box{
   background: #fff;
@@ -140,21 +183,10 @@ body::-webkit-scrollbar-thumb {
   padding: 1em;
 }
 
-.container {
-  display: flex;
-  flex-direction:column;
-  margin: 5rem ;
-  margin-top: 0;
-  padding: 1rem;
-}
-.container .box {
-  width: 100%;
-  margin-top: 50px;
-  background: #fff;
-  padding: 1rem;
-  padding-right: 0px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.1);
+
+.form-container{
+  padding: 1em;
+  min-height: 100vh;
 }
 .contact {
   margin: 8%;
@@ -165,7 +197,7 @@ body::-webkit-scrollbar-thumb {
 .form-group label {
   display: block;
   font-size: 20px;
-  color: #35373a;
+  color: #1e1e24;
   font-weight: bolder;
 }
 .form-group input,
@@ -221,6 +253,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     right: 10px;
     top: 13px;
+    color: #35373a;
   }
   .active{
     display: block;
@@ -235,5 +268,15 @@ body::-webkit-scrollbar-thumb {
   .skill-container{
     display: flex;
     flex-direction: column;
+  }
+  .aboutme{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .picture-box{
+    display: flex;
+    align-self: center;
+    width: 70%;
   }
 }
