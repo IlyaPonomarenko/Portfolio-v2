@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/e57182f97d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Ilya Ponomarenko</title>
   </head>
@@ -12,7 +17,19 @@
       <div class="hero-content-area">
         <div class="hero-content">
           <h1>Ilya Ponomarenko</h1>
-          <p>something something</p>
+          <p>
+            <a href="https://github.com/IlyaPonomarenko"  target="_blank" class="hero-link"><span class="link-text">GitHub<span class="material-icons">
+              link
+              </span>
+            </span>
+          </a>
+            <a href="https://www.linkedin.com/in/ilya-ponomarenko-53282624b/"  target="_blank" class="hero-link"><span class="link-text">Linkedin</span><span class="material-icons">
+              link
+            </span>
+            </span> 
+          </a>
+          </p>
+          
         </div>
       </div>
     </div>
@@ -23,26 +40,35 @@
       </div>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="https://github.com/IlyaPonomarenko" class="nav-link">
-            <span class="link-text">GitHub</span>
+          <a href="#aboutme" class="nav-link">
+            <span class="link-text">About Me</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a
-            href="https://www.linkedin.com/in/ilya-ponomarenko-53282624b/"
+            href="#main-section"
             class="nav-link"
           >
-            <span class="link-text">Linkedin</span>
+            <span class="link-text">Projects</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a
-            href="https://stackoverflow.com/users/19836133/ilya-ponomarenko"
+            href="#skill-section"
             class="nav-link"
           >
-            <span class="link-text">Stackoverflow</span>
+            <span class="link-text">Skills</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="#form-section"
+            class="nav-link"
+          >
+            <span class="link-text">Contact me</span>
           </a>
         </li>
       </ul>
@@ -53,7 +79,7 @@
       </div>
     </nav>
 
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
       <div class="aboutme-text">
         <h2>Heading</h2>
         <p class="head-p">Moist</p>
@@ -81,7 +107,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="main-section">
       <div class="main-text">
         <h2>My projects</h2>
         <p class="head-p">Here are some recent works</p>
@@ -106,39 +132,72 @@
       </div>
     </section>
 
-    <section class="skill-section">
+    <section class="skill-section" id="skill-section">
       <div class="skill-container">
         <h2>My skills</h2>
         <div class="skill-box">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
-            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
-            Voluptatum, ipsa excepturi!
-          </p>
+          <div class="col">
+            <div class="item">
+              <div icons="icons">
+
+                <span style="color:#fff;">
+                <i class="fa-brands fa-html5 fa-5x"></i>
+                <i class="fa-brands fa-css3-alt fa-5x"></i>
+                </span>
+
+              </div>
+              <h4>WebDesign</h4>
+              <p>I can design web pages using HTML5, CSS3, Bootstrap</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div icons="icons">
+                
+                <span style="color:#fff;">
+                <i class="fa-brands fa-js fa-5x"></i>
+                </span>
+
+              </div>
+              <h4>JScript</h4>
+              <p>I am familiar with JavaScript and can make web pages dynamic using this tool.</p>
+            </div>
+          </div>
         </div>
         <div class="skill-box">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
-            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
-            Voluptatum, ipsa excepturi!
-          </p>
-        </div>
-        <div class="skill-box">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-            ipsam recusandae! Recusandae repellendus doloremque expedita nemo, a
-            rerum laborum tenetur, totam ad suscipit, quas illo ut saepe.
-            Voluptatum, ipsa excepturi!
-          </p>
+          <div class="col">
+            <div class="item">
+              <div icons="icons">
+
+                <span style="color:#fff;">
+                  <i class="fa-solid fa-database fa-5x"></i>
+                </span>
+
+              </div>
+              <h4>DBA & SQL </h4>
+              <p>I have a working knowledge of database management and am familiar with all aspects of SQL.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div icons="icons">
+                
+                <span style="color:#fff;">
+                  <i class="fa-solid fa-laptop-code fa-5x"></i>
+                </span>
+
+              </div>
+              <h4>Visual Studio & C#</h4>
+              <p>I am proficient in C# and aspects of Visual Studio</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="form-container">
+    <section class="form-container" id="form-section">
       <div class="contact">
-        <form>
+        <form class="feedback-form">
           <h2>Contact me</h2>
           <div class="form-group">
             <label for="name">Name:</label>
@@ -161,6 +220,9 @@
     <div style="margin-bottom: 100px"></div>
     <footer class="footer">
       <small>&copy; Copyright 2022, IlyaPonomarenko</small>
+      <button class="btn_back_top" id="back_to_top">
+        <span class="material-icons"> arrow_upward </span>
+      </button>
     </footer>
   </body>
   <script src="app.js"></script>

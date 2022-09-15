@@ -8,6 +8,9 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: black;
   background: #ddd;
@@ -86,6 +89,14 @@ body::-webkit-scrollbar-thumb {
 }
 .hero-content {
   text-align: center;
+}
+.hero-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+.hero-content a:hover {
+  text-align: center;
+  color: #ddd;
 }
 .hero-content h1 {
   font-size: 80px;
@@ -175,30 +186,47 @@ display: flex;
   border-bottom: #fff 2px solid;
   color: #fff;
 }
+.skill-section h4 {
+  font-size: 1.4em;
+  color: #fff;
+}
 .skill-container .skill-box{
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 700px 600px;
+  grid-template-rows: 300px;
+}
+.skill-box p{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+}
+.item{
   margin: 1em;
-  padding: 1em;
 }
 
 
 .form-container{
+  display: flex;
   padding: 1em;
   min-height: 100vh;
 }
+
 .contact {
   margin: 8%;
+  
 }
 .contact h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 2.4em;
+  padding-bottom: 0.4em;
+  width: auto;
+  border-bottom: #141418 2px solid;
 }
 .form-group label {
   display: block;
   font-size: 20px;
   color: #1e1e24;
-  font-weight: bolder;
 }
 .form-group input,
 .form-group textarea {
@@ -207,24 +235,17 @@ display: flex;
   border: none;
   outline: none;
   font-family: inherit;
-  font-weight: bold;
+
 }
 .btn {
   margin-top: 2%;
   padding: 7px 30px;
   font-family: inherit;
-  font-weight: 900;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.1s;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-}
-
-.footer {
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
 }
 
 .btn:hover {
@@ -232,6 +253,21 @@ display: flex;
   transform: translateY(-0.3em);
   cursor: pointer;
 }
+
+.footer {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.btn_back_top{
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
 @media all and (max-width:480px){
   .logo{
     display: block;
@@ -278,5 +314,14 @@ display: flex;
     display: flex;
     align-self: center;
     width: 70%;
+  }
+  .skill-container .skill-box{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .col{
+    margin: 1em;
+
   }
 }
