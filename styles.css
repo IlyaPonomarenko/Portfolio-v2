@@ -221,11 +221,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1em;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
   justify-content: center;
 }
 .skill-section h2 {
+  display: flex;
   font-size: 2.4em;
   padding-bottom: 0.4em;
   width: auto;
@@ -235,11 +234,16 @@ body::-webkit-scrollbar-thumb {
 .skill-section h4 {
   font-size: 1.4em;
   color: #fff;
+  height: 100%;
+  width: 41%;
+  margin-right: 8em;
 }
 .skill-container .skill-box{
   display: grid;
   grid-template-columns: 600px 600px;
   grid-template-rows: 300px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .skill-box p{
   color: #fff;
@@ -247,6 +251,14 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   max-width: 70%;
 }
+.icons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  margin-right: 3em;
+}
+
+
 .item{
   margin: 1em;
 }
