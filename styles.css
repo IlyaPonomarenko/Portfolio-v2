@@ -142,6 +142,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-section{
   display: flex;
+  justify-content: center;
   background: #e8e8e8;
   padding: 1em;
   min-height: 100vh;
@@ -152,8 +153,8 @@ body::-webkit-scrollbar-thumb {
  font-size: 1em;
  padding-right: 15px;
  padding-left: 15px;
- margin-right: auto;
- margin-left: auto;
+ margin-right: 5em;
+ margin-left: 5em;
  justify-content: center;
 }
 .main-section h2{
@@ -211,6 +212,7 @@ body::-webkit-scrollbar-thumb {
 
 .skill-section{
   display: flex;
+  justify-content: center;
   padding: 1em;
   min-height: 100vh;
   background: #444;
@@ -236,14 +238,15 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   height: 100%;
   width: 41%;
-  margin-right: 8em;
+  margin-right: 36%;
+  text-align: center;
 }
 .skill-container .skill-box{
   display: grid;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 300px;
+  grid-template-columns: repeat(2, 1fr);
   margin-left: 2em;
   margin-right: 2em;
+  
 }
 .skill-box p{
   color: #fff;
@@ -325,7 +328,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media all and (max-width:480px){
+@media all and (max-width:1000px){
   .logo{
     display: block;
     position: absolute;
@@ -372,10 +375,17 @@ body::-webkit-scrollbar-thumb {
     align-self: center;
     width: 70%;
   }
+ 
   .skill-container .skill-box{
     display: flex;
     flex-direction: column;
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .projects-gallery{
+    display: flex;
+    flex-direction: column;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
   }
   .col{
     margin: 1em;
