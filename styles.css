@@ -244,7 +244,7 @@ body::-webkit-scrollbar-thumb {
 .skill-container .skill-box{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 2em;
+  margin-left: 9em;
   margin-right: 2em;
   
 }
@@ -260,8 +260,22 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 3em;
   margin-right: 3em;
 }
-
-
+.icon{
+  width: 4em;
+  height: 6em;
+}
+.webspan{
+  display: flex;
+}
+.jsIcon{
+  width: 4.5em;
+}
+.dbIcon{
+  width: 5em;
+}
+.codeIcon{
+  width: 5em;
+}
 .item{
   margin: 1em;
 }
