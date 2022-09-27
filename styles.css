@@ -238,7 +238,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   height: 100%;
   width: 41%;
-  margin-right: 36%;
+  margin-right: 35%;
   text-align: center;
 }
 .skill-container .skill-box{
@@ -268,13 +268,16 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 .jsIcon{
-  width: 4.5em;
+  width: 5.5em;
+  padding-left: 7px;
 }
 .dbIcon{
   width: 5em;
+  padding-left: 22px;
 }
 .codeIcon{
-  width: 5em;
+  width: 5.5em;
+  padding-left: 6px;
 }
 .item{
   margin: 1em;
@@ -288,7 +291,6 @@ body::-webkit-scrollbar-thumb {
 
 .contact {
   margin-top: 8%;
-  
 }
 .contact h2 {
   text-align: left;
