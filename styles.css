@@ -186,10 +186,8 @@ body::-webkit-scrollbar-thumb {
   grid-row-end: 4;
 }
 .gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 3;
 }
 .gallery__item--3 {
   grid-column-start: 3;
