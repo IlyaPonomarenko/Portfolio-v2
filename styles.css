@@ -215,6 +215,9 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   background: #444;
 }
+.allgrid{
+  margin-top: 2em;
+}
 .skill-container{
   display: flex;
   flex-direction: column;
@@ -264,6 +267,9 @@ body::-webkit-scrollbar-thumb {
 }
 .webspan{
   display: flex;
+}
+.htmlIcon{
+  width: 4.5em;
 }
 .jsIcon{
   width: 5.5em;
